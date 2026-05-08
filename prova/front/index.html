@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-bg">
+
+  <header>
+    <h1>DAILY CHECK</h1>
+
+    <nav>
+      <div class="links">
+        <img src="https://www.svgrepo.com/show/505393/home-1.svg" alt="icon" width="20px" height="20px">
+        <a href="#" onclick="mostrar('home')">Home</a>
+      </div>
+
+      <div class="links">
+        <img src="https://www.svgrepo.com/show/524450/cloud.svg" alt="icon" width="20px" height="20px">
+        <a href="#" onclick="mostrar('temp')">Temperatura</a>
+      </div>
+
+      <div class="links">
+        <img src="https://www.svgrepo.com/show/532154/check.svg" alt="icon" width="20px" height="20px">
+        <a href="#" onclick="mostrar('tarefas')">Tarefas</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- home-->
+  <div id="home" class="pagina">
+    <h2 class="titulo">Suas tarefas</h2>
+    <div id="lista" class="grid"></div>
+  </div>
+
+  <!-- temp -->
+  <div id="temp" class="pagina centralizado" style="display:none;">
+    <div class="card-clima">
+
+      <img src="https://www.svgrepo.com/show/506594/sun.svg" alt="sun" width="40px" height="40px">
+
+      <h2>Buscar temperatura</h2>
+
+      <input id="cidade" placeholder="Digite a cidade">
+
+      <button onclick="buscar()">Buscar</button>
+
+      <h3 id="resultado"></h3>
+
+    </div>
+  </div>
+
+  <div id="tarefas" class="pagina centralizado" style="display:none;">
+    <form class="card-clima form-tarefa">
+
+      <img src="https://www.svgrepo.com/show/497577/task.svg" alt="task" width="40px" height="40px">
+
+      <h2>Nova tarefa</h2>
+
+      <input id="nome" placeholder="Nome">
+      <input id="inicio" placeholder="Data início (ex: 01/01/2026)">
+      <input id="fim" placeholder="Data fim (ex: 02/01/2026)">
+      <textarea id="descricao" placeholder="Descrição"></textarea>
+      <input id="imagem" placeholder="URL da imagem">
+      <button>Salvar</button>
+
+    </form>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>

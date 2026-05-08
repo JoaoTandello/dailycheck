@@ -1,0 +1,106 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #dbe7f0;
+}
+
+header {
+  background: #4f6d7a;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+nav .links{
+  display: flex;
+  gap: 5px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pagina {
+  padding: 20px 30px 30px;
+}
+
+.centralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.titulo {
+  margin-top: 0;
+  text-align: center;
+  color: #2f4f60;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  background: #6f8fa3;
+  color: white;
+  padding: 15px;
+  box-shadow: 0 0 20px #486171;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card-clima {
+  background: #6f8fa3;
+  padding: 30px;
+  border-radius: 4px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 20px #486171;
+}
+.card-clima img, nav .links{
+  filter: brightness(0) saturate(100%) invert(98%) sepia(1%) saturate(1450%) hue-rotate(35deg) brightness(131%) contrast(94%);
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  resize: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2f4f60;
+  color: white;
+  cursor: pointer;
+}
